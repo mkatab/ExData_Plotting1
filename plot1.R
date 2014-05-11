@@ -1,0 +1,5 @@
+da<-read.table("household_power_consumption.txt",sep=";",nrows=2880,skip=66637)
+library(datasets)
+hist(da$V3,main="Global Active Power",xlab="Global Active Power(kilowatts)",col="red")
+dev.copy(png, file = "plot1.png")
+dev.off(3)
